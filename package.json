@@ -37,18 +37,11 @@
         "react": "*",
         "react-native": "*"
     },
+    "podspecPath": "./react-native-video.podspec",
     "scripts": {
-        "lint": "yarn eslint .",
-        "build": "yarn tsc",
-        "prepare": "yarn build",
-        "xbasic": "yarn --cwd examples/basic",
-        "docs": "yarn --cwd docs build",
-        "release": "release-it",
-        "test": "echo no test available",
-        "check-ios": "scripts/swift-format.sh && scripts/swift-lint.sh && scripts/clang-format.sh",
-        "check-android": "scripts/kotlin-lint.sh",
-        "check-all": "yarn check-android; yarn check-ios; yarn lint",
-        "codegen": "node ./node_modules/react-native/scripts/generate-codegen-artifacts.js --path ./ ./output"
+        "prepack": "yarn run build",
+        "lint": "eslint .",
+        "build": "tsc -p tsconfig.build.json"
     },
     "files": [
         "android",

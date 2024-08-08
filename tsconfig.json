@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
-    "rootDir": "*",
     "outDir": "lib",
+    "baseUrl": "./",    
+    "rootDir": "./src",
     "paths": {
       "react-native-video": ["./index"]
     },
@@ -31,5 +31,6 @@
     "verbatimModuleSyntax": false,
     "allowSyntheticDefaultImports": true
   },
-  "exclude": ["examples", "lib", "docs"]
+  "exclude": ["examples", "lib", "docs", "node_modules"],
+  "include": ["src/**/*.ts"],
 }

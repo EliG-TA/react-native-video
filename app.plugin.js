@@ -1,1 +1,1 @@
-module.exports = require('./expo-plugins/withRNVideo');
+module.exports = require('./lib/expo-plugins/withRNVideo');

@@ -1,5 +1,7 @@
 
 {
   "extends": "./tsconfig",
-  "exclude": ["examples", "lib"]
+  "compilerOptions": {
+    "composite": false
+  }
 }

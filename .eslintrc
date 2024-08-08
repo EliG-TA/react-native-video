@@ -11,6 +11,7 @@
     "no-trailing-spaces": 1
   },
   "parserOptions": {
-    "requireConfigFile": false
+    "requireConfigFile": false,
+    "project": "tsconfig.json"
   }
 }
