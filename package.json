@@ -2,15 +2,13 @@
     "name": "react-native-video",
     "version": "6.4.3",
     "description": "A <Video /> element for react-native",
-    "main": "lib/index",
-    "source": "src/index",
-    "react-native": "src/index",
+    "main": "index.ts",
     "license": "MIT",
     "author": "Community Contributors",
-    "homepage": "https://thewidlarzgroup.github.io/react-native-video/",
+    "homepage": "https://react-native-video/react-native-video#readme",
     "repository": {
         "type": "git",
-        "url": "git@github.com:TheWidlarzGroup/react-native-video.git"
+        "url": "git@github.com:react-native-video/react-native-video.git"
     },
     "resolutions": {
         "@types/react": "~18.0.0"
@@ -56,8 +54,9 @@
         "android",
         "ios",
         "windows",
-        "src",
-        "lib",
+        "utils.ts",
+        "Video.tsx",
+        "VideoDecoderProperties.ts",
         "react-native-video.podspec",
         "app.plugin.js",
         "!android/build",

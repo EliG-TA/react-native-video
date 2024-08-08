@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "rootDir": "./src",
+    "baseUrl": "./",
+    "rootDir": "*",
     "outDir": "lib",
     "paths": {
-      "react-native-video": ["./src/index"]
+      "react-native-video": ["./index"]
     },
     "composite": true,
     "declaration": true,
