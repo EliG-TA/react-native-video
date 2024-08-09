@@ -1008,7 +1008,7 @@ class RCTVideo: UIView, RCTVideoPlayerViewControllerDelegate, RCTPlayerObserverH
                         self._playerViewController?.removeFromParent()
                     }
 
-                    viewController.present(playerViewController, animated: true, completion: { [weak self] in
+                    viewController.present(_playerViewController, animated: true, completion: { [weak self] in
                         guard let self else { return }
                         // In fullscreen we must display controls
                         self._playerViewController?.showsPlaybackControls = true
